@@ -1,4 +1,4 @@
-# SCM Insights API - Prisma Access Egress IP Retriever
+# SCM Insights API & Prisma Access Egress IP Retriever
 
 ## Overview
 This Terraform module retrieves **Prisma Access egress IPs** dynamically via the Prisma Access API. The output can be consumed by DevOps teams to automatically update cloud security configurations.

@@ -7,12 +7,10 @@ This directory contains example Terraform configurations to demonstrate how to u
 
 ## Testing the Module Locally
 
-To test this module, create a `terraform.tfvars` file in the `/examples/` directory to pass your inputs. This file is **ignored by Git** to avoid exposing sensitive data.
-
 ### **Steps to Test**
-1. **Copy the example `.tfvars` file:**
+1. **Copy the `example.tfvars` file to `terraform.tfvars` :**
    ```sh
-   cp examples/terraform.tfvars.example examples/terraform.tfvars
+   cp examples/example.tfvars examples/terraform.tfvars
    ```
 
 2. **Edit `examples/terraform.tfvars` with your API key and preferred settings:**
