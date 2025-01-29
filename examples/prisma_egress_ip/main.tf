@@ -1,5 +1,5 @@
-module "prisma_access_api" {
-  source         = "../../modules/prisma_access_api"
+module "prisma_egress_ips" {
+  source         = "../../modules/prisma_egress_ips"
   prisma_api_key = var.prisma_api_key
   prisma_api_url = var.prisma_api_url
   service_type   = var.service_type
@@ -8,5 +8,5 @@ module "prisma_access_api" {
 }
 
 output "egress_ips" {
-  value = module.prisma_access_api.egress_ips
+  value = module.prisma_egress_ips.egress_ips
 }
