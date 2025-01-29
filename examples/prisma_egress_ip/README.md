@@ -78,9 +78,8 @@ output "egress_ips" {
 
 ### **How to Integrate with AWS Security Groups**
 Once you apply the Terraform module, the **`egress_ips` output** provides a list of Prisma Access IP addresses. You can then use these IPs to allow secure access to AWS resources, such as:
-- Web applications (HTTPS traffic)
+- Web applications
 - API endpoints
-- Private services behind VPN/Direct Connect
 
 ### **Terraform Configuration**
 Use the retrieved **egress IPs** dynamically in an **AWS Security Group**:
@@ -113,9 +112,5 @@ resource "aws_security_group" "prisma_access" {
 
 ## **Notes**
 - You can modify `service_type`, `addr_type`, and `location` variables to filter the retrieved IPs.
-- After testing, **destroy the test infrastructure** using:
-   ```sh
-   terraform destroy
-   ```
 
 🚀 **Now you're ready to integrate Prisma Access egress IPs into your cloud security policies!**
