@@ -28,10 +28,10 @@ You can configure `prisma_api_url` with any of the following endpoints:
 ### **Steps to Test**
 1. **Copy the `example.tfvars` file to `terraform.tfvars` :**
    ```sh
-   cp examples/example.tfvars examples/terraform.tfvars
+   cp examples/prisma_egress_ip/example.tfvars examples/prisma_egress_ip/terraform.tfvars
    ```
 
-2. **Edit `examples/terraform.tfvars` with your API key and preferred settings:**
+2. **Edit `examples/prisma_egress_ip/terraform.tfvars` with your API key and preferred settings:**
    ```hcl
    prisma_api_key = "your_api_key_here"
    prisma_api_url = "https://api.prod.datapath.prismaaccess.com/getPrismaAccessIP/v2"
@@ -55,14 +55,17 @@ Once the module is applied, you can retrieve Prisma Access egress IPs and use th
 
 ### **Basic Usage**
 ```hcl
-module "prisma_access_api" {
-  source         = "../modules/prisma_access_api"
+module "prisma_egress_ips" {
+  source         = "../../modules/prisma_egress_ips"
   prisma_api_key = var.prisma_api_key
   prisma_api_url = var.prisma_api_url
+  service_type   = var.service_type
+  addr_type      = var.addr_type
+  location       = var.location
 }
 
 output "egress_ips" {
-  value = module.prisma_access_api.egress_ips
+  value = module.prisma_egress_ips.egress_ips
 }
 ```
 
