@@ -2,4 +2,4 @@
 
 
 ## Usage & Examples
-See the [`/examples directory'](examples/) for usage instructions and example Terraform configurations.
+See the [`/examples'](examples/) `directory` for usage instructions and example Terraform configurations.
