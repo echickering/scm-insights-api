@@ -147,7 +147,6 @@ resource "oci_core_security_list" "prisma_access" {
 ---
 
 ## **Notes**
-- The `.gitignore` file ensures `terraform.tfvars` is **not committed** to prevent accidental exposure of secrets.
 - You can modify `service_type`, `addr_type`, and `location` variables to filter the retrieved IPs.
 - After testing, **destroy the test infrastructure** using:
    ```sh
