@@ -14,7 +14,7 @@ You can configure `prisma_api_url` with any of the following endpoints:
 |-----------------|--------|----------|-------------|
 | `prisma_api_key` | `string` | N/A | API Key for Prisma Access authentication (sensitive) |
 | `prisma_api_url` | `string` | `"https://api.prod.datapath.prismaaccess.com/getPrismaAccessIP/v2"` | Prisma Access API endpoint URL |
-| `service_type`   | `string` | `"all"` | Prisma Access service type (all, remote_network, gp_gateway, etc.) |
+| `service_type`   | `string` | `"all"` | Prisma Access service type (all, remote_network, gp_gateway, swg_proxy, etc.) |
 | `addr_type`      | `string` | `"all"` | Address type (all, active, service_ip, etc.) |
 | `location`       | `string` | `"all"` | Location scope (all or deployed) |
 

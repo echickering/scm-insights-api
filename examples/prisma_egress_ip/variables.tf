@@ -11,7 +11,7 @@ variable "prisma_api_url" {
 }
 
 variable "service_type" {
-  description = "Prisma Access service type"
+  description = "Prisma Access service type (all, remote_network, gp_gateway, swg_proxy, etc.)"
   type        = string
   default     = "all"
 }
