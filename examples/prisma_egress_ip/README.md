@@ -42,7 +42,7 @@ You can configure `prisma_api_url` with any of the following endpoints:
 
 3. **Run Terraform:**
    ```sh
-   cd examples
+   cd examples/prisma_egress_ip
    terraform init
    terraform plan
    terraform apply
