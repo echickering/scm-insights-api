@@ -73,7 +73,8 @@ output "egress_ips" {
 
 ## **Using Prisma Access IPs in an AWS Security Group**
 ### **Why Use This?**
-Many organizations need to allow inbound connections from Prisma Access to their AWS workloads. Since Prisma Access dynamically assigns **egress IPs**, this module helps automate Security Group updates by retrieving the latest **Prisma Access egress IPs**.
+- Many organizations need to allow inbound connections from Prisma Access to their CSP workloads. 
+- Since Prisma Access can dynamically assigns **egress IPs**, this module helps automate ACL updates by retrieving the latest **Prisma Access Egress IPs**.
 
 ### **How to Integrate with AWS Security Groups**
 Once you apply the Terraform module, the **`egress_ips` output** provides a list of Prisma Access IP addresses. You can then use these IPs to allow secure access to AWS resources, such as:
