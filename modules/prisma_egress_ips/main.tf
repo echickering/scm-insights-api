@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    http = {
-      source  = "hashicorp/http"
-      version = "~> 3.0"
-    }
-  }
-}
-
 data "http" "prisma_egress_ips" {
   url = var.prisma_api_url
 
