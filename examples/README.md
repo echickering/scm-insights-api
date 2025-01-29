@@ -1,4 +1,4 @@
-# SCM Insights API - Example Usage
+# Prisma Egress IP list API - Example Usage
 
 ## Overview
 This directory contains example Terraform configurations to demonstrate how to use the **SCM Insights API** module.
