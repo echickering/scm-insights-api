@@ -6,7 +6,7 @@
 
 # Ignore sensitive files
 *.tfvars
-!examples/example.tfvars
+!examples/prisma_egress_ip/example.tfvars
 *.tfvars.json
 
 # Ignore logs and temporary files
