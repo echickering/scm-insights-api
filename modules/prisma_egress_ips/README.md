@@ -12,7 +12,7 @@ To use this module, add the following to your Terraform configuration:
 ```hcl
 module "prisma_egress_ips" {
   source  = "echickering/api/prisma//modules/prisma_egress_ips"
-  version = "1.0.0"
+  version = "1.0.1"
 
   prisma_api_key = var.prisma_api_key
   prisma_api_url = var.prisma_api_url
